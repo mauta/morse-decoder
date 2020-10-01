@@ -62,16 +62,16 @@ function decode(expr) {
     }
 
 
-    // arr = arr.map(el => {(el === ' ')? el = ' ': el = MORSE_TABLE[el]});
+    arr = arr.map(el => (el === ' ')? el = ' ': el = MORSE_TABLE[el]);
 
-    for (let k = 0; k < arr.length; k++) {
-        if (arr[k] === ' ') {
-            arr[k] = ' ';
-        } else {
-            arr[k] = MORSE_TABLE[arr[k]];
+    // for (let k = 0; k < arr.length; k++) {
+    //     if (arr[k] === ' ') {
+    //         arr[k] = ' ';
+    //     } else {
+    //         arr[k] = MORSE_TABLE[arr[k]];
 
-        }
-    }
+    //     }
+    // }
 
     return arr.join('');
 
